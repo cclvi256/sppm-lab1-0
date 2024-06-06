@@ -13,7 +13,7 @@ fn main() {
                 std::thread::spawn(|| handle_connection(_stream));
             }
             Err(e) => {
-                println!("error: {}", e);
+                panic!("error: {}", e);
             }
         }
     }
