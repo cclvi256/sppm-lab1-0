@@ -4,7 +4,7 @@ use std::{
 };
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:4221").unwrap();
+    let listener = TcpListener::bind("127.0.0.1:4221").unwrap();    // Binding to a port
 
     for stream in listener.incoming() {
         match stream {
